@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<StackPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.springwithfx.controller.UpdateChiTieuController">
+
+    <VBox alignment="CENTER" spacing="10">
+
+        <Label text="Cập Nhật Chi Tiêu">
+            <font>
+                <Font size="18.0" />
+            </font>
+        </Label>
+
+        <HBox spacing="10">
+            <Label text="Mã:" />
+            <TextField fx:id="Id" prefWidth="304.0" />
+        </HBox>
+
+        <HBox spacing="10">
+            <Label text="Loại Chi Tiêu:" />
+            <TextField fx:id="loaiChiTieuField" prefWidth="304.0" />
+        </HBox>
+
+        <HBox spacing="10">
+            <Label text="Mặt Hàng:" />
+            <TextField fx:id="matHangField" prefWidth="304.0" />
+        </HBox>
+
+        <HBox spacing="10">
+            <Label text="Số Tiền:" />
+            <TextField fx:id="soTienField" prefWidth="304.0" />
+        </HBox>
+
+        <HBox spacing="10">
+            <Label text="Ngày Chi Tiêu:" />
+            <DatePicker fx:id="ngayChiTieuPicker" prefWidth="150.0" />
+        </HBox>
+
+        <HBox spacing="10">
+            <Label text="Ghi Chú:" />
+            <TextField fx:id="ghiChuField" prefWidth="304.0" />
+        </HBox>
+
+        <Button fx:id="updateButton" mnemonicParsing="false" onAction="#updateChiTieu" text="Cập Nhật" />
+
+    </VBox>
+</StackPane>

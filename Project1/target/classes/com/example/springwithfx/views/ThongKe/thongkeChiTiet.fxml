@@ -1,0 +1,36 @@
+<?import javafx.scene.chart.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.image.Image?>
+
+<AnchorPane fx:id="thongkechitieu" prefHeight="720.0" prefWidth="1280.0" stylesheets="../../application.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.springwithfx.controller.ThongKeChiTietController">
+    <VBox prefHeight="720.0" prefWidth="1280.0" spacing="10">
+        <HBox alignment="CENTER" spacing="10">
+            <Label text="Tổng Số Tiền: ">
+                <font>
+                    <Font size="24.0" />
+                </font>
+            </Label>
+            <Label fx:id="totalLabel">
+                <font>
+                    <Font size="18.0" />
+                </font>
+            </Label>
+        </HBox>
+
+        <HBox alignment="CENTER" spacing="10">
+            <Label text="Từ Ngày:" />
+            <DatePicker fx:id="DatePicker1" />
+            <Label text="Đến Ngày:" />
+            <DatePicker fx:id="DatePicker2" />
+            <Button onAction="#showChart" text="Biểu Đồ Chi Tiêu Trong Khoảng Ngày" />
+        </HBox>
+        <HBox spacing="20">
+
+            <!-- Biểu đồ tròn cho chi tiêu -->
+            <PieChart fx:id="chiTieuPieChart" prefHeight="312.0" prefWidth="342.0" title="Biểu Đồ Chi Tiêu" />
+        </HBox>
+    </VBox>
+</AnchorPane>

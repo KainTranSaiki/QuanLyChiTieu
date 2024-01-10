@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="890" prefWidth="1500" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.springwithfx.controller.HomeController">
+   <children>
+      <HBox layoutX="1.0" prefHeight="890.0" prefWidth="1500.0">
+         <children>
+            <AnchorPane prefHeight="890.0" prefWidth="191.0" styleClass="bg-color-1">
+               <children>
+
+                  <Button fx:id="household_btn" layoutX="23.0" layoutY="320.0" mnemonicParsing="false" onAction="#setChiTieu" prefHeight="60.0" prefWidth="140.0" styleClass="nav-btn-1" text="Chi Tiêu" textFill="WHITE" AnchorPane.leftAnchor="23.0">
+                     <graphic>
+                        <FontAwesomeIconView fill="WHITE" glyphName="HOME" selectionEnd="0" size="1.5EM" />
+                     </graphic></Button>
+                  <Button fx:id="citizens_btn" layoutX="23.0" layoutY="220.0" mnemonicParsing="false" onAction="#setThuNhap" prefHeight="60.0" prefWidth="140.0" styleClass="nav-btn-1" text="Thu Nhập" textFill="WHITE" AnchorPane.leftAnchor="23.0">
+                     <graphic>
+                        <FontAwesomeIconView fill="WHITE" glyphName="USERS" size="1.5EM" text="" />
+                     </graphic>
+                  </Button>
+                  <Button fx:id="setting_btn" layoutX="51.0" layoutY="498.0" mnemonicParsing="false" styleClass="btn-setting" AnchorPane.bottomAnchor="28.0">
+                     <graphic>
+                        <FontAwesomeIconView fill="WHITE" glyphName="COG" size="1.5EM" />
+                     </graphic>
+                  </Button>
+                  <Button fx:id="charts_btn1" layoutX="23.0" layoutY="415.0" mnemonicParsing="false" onAction="#setThongKe" prefHeight="60.0" prefWidth="140.0" styleClass="nav-btn-1" text="Thống kê" textFill="WHITE">
+                     <graphic>
+                        <FontAwesomeIconView fill="WHITE" glyphName="TABLE" size="1.5EM" />
+                     </graphic>
+                  </Button>
+               </children>
+            </AnchorPane>
+            <BorderPane fx:id="borderPane" prefHeight="890.0" prefWidth="1319.0" />
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>
